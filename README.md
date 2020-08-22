@@ -1,5 +1,5 @@
 # Enigma
-C++ Implementation of Enigma
+C++ implementation of Enigma
 
 Enigma 1 with static reflector A initialized.
 It takes 3 rotors in any order with a static reflector.
