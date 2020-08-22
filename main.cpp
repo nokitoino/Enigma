@@ -9,10 +9,10 @@ int main(int argc, char** argv) {
 
 	Enigma e;
 	Rotor f,m,s, ukw;
-	s.createRotor(s.string_to_rotor(roemischEins));
-	m.createRotor(s.string_to_rotor(roemischZwei));
-	f.createRotor(s.string_to_rotor(roemischDrei));
-	ukw.createRotor(s.string_to_rotor(reflektor_A));
+	s.string_to_rotor(roemischEins);
+	m.string_to_rotor(roemischZwei);
+	f.string_to_rotor(roemischDrei);
+	ukw.string_to_rotor(reflektor_A);
 
 	s.setTurnOver(0);
 	m.setTurnOver(0);

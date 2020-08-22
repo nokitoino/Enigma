@@ -8,10 +8,10 @@ Brief code-relevant explanation on how the Enigma works by Akin Y.
 The Enigma is made of 3 moving rotors and one static (not moving) Reflector and alphabetic input keyboard,
 alphabetic output bulbs and the plugboard.
 
-The rotors are connected.
-The first rotor always increments by one when encrypting letters.
-If first rotor reaches a certain tunrOver letter the second rotor increments by one.
-If the second rotor reaches a certain turnOver letter the third rotor increments by one.
+The rotors are sequenced.
+The first rotor always rotates by one when encrypting letters.
+If first rotor reaches a certain tunrOver letter the second rotor rotates by one.
+If the second rotor reaches a certain turnOver letter the third rotor rotates by one.
 One rotor has an input alphabet and an output alphabet.
 The internal wiring is usually randomly predefined, at the bottom of this page you can find tables for specific models 
 https://en.wikipedia.org/wiki/Enigma_rotor_details.
