@@ -15,7 +15,7 @@ If the second rotor reaches a certain turnOver letter the third rotor increments
 One rotor has an input alphabet and an output alphabet.
 The internal wiring is usually randomly predefined, at the bottom of this page you can find tables for specific models 
 https://en.wikipedia.org/wiki/Enigma_rotor_details.
-So an input letter on rotor1 is translated to an output letter, which is input of the second rotor.
+So an input letter on rotor1 is translated to an output letter, which is input of the second rotor, and so on ...
 The reflector takes the last output increments by an specific offset and inverts the procedur.
 So now we decrypt the new letter from rotor3 to rotor1.
 
