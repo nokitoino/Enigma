@@ -9,16 +9,18 @@ The Enigma is made of 3 moving rotors and one static (not moving) Reflector and 
 alphabetic output bulbs and the plugboard.
 
 The rotors are connected.
-If the first rotor does a full cycle (26 steps), the second rotor increments by one.
-If the second rotor does a full cycle, the third rotor increments by one.
+The first rotor always increments by one when encrypting letters.
+If first rotor reaches a certain tunrOver letter the second rotor increments by one.
+If the second rotor reaches a certain turnOver letter the third rotor increments by one.
 One rotor has an input alphabet and an output alphabet.
 The internal wiring is usually randomly predefined, at the bottom of this page you can find tables for specific models 
 https://en.wikipedia.org/wiki/Enigma_rotor_details.
 So an input letter on rotor1 is translated to an output letter, which is input of the second rotor.
 The reflector takes the last output increments by an specific offset and inverts the procedur.
+So now we decrypt the new letter from rotor3 to rotor1.
 
 The plugboard simply connects two pairs of letters which will be swapped before input travels trough first rotor.
-After reflection it will be swapped again at the end.
+After reflection it will be swapped again at the very end of the rotors.
 */
 class Enigma {
 public: 
