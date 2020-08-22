@@ -4,7 +4,7 @@
 #include "Rotor.h"
 #include "Plugboard.h"
 /*
-Brief code-relevant explanation on how the Enigma works by Akin Yilmaz.
+Brief code-relevant explanation on how the Enigma works by Akin Y.
 The Enigma is made of 3 moving rotors and one static (not moving) Reflector and alphabetic input keyboard,
 alphabetic output bulbs and the plugboard.
 
