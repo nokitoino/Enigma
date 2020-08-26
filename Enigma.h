@@ -34,8 +34,8 @@ public:
 	~Enigma() {}
 private:
 	Plugboard p;
-	std::vector<Rotor> set = {}; // Amount of rotors in the set
+	std::vector<Rotor> set = {}; // Menge der Rotoren
 	Rotor ukw;
-	int start_configuration[3] = { 0,0,0 }; // Amount of rotors in the set, left rotor slowest one
+	int start_configuration[3] = { 0,0,0 }; // Konfiguration der sequenzierten Rotoren
 };
 #endif
