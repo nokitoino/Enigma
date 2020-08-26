@@ -9,20 +9,20 @@ int main(int argc, char** argv) {
 
 	Enigma e;
 	Rotor f,m,s, ukw;
-	s.string_to_rotor(roemischEins);
-	m.string_to_rotor(roemischZwei);
 	f.string_to_rotor(roemischDrei);
+	m.string_to_rotor(roemischZwei);
+	s.string_to_rotor(roemischEins);
 	ukw.string_to_rotor(reflektor_A);
 
-	s.setTurnOver(0);
-	m.setTurnOver(0);
-	f.setTurnOver(0);
+	s.setTurnOver(22);
+	m.setTurnOver(5);
+	f.setTurnOver(17);
 
 	e.addRotor(s);
 	e.addRotor(m);
 	e.addRotor(f);
 	e.addUKW(ukw);
-
+	//remove IOSTREAM from ROTOR.H !!!!!!!!!!
 	std::cout << "Enigma 1 mit statischem Reflektor A implementiert in C++" << std::endl;
 	std::cout << "Abstrakt Programmiert. Es koennen maximal drei detaillierte Walzen und eine statische Umkehrwalze hinzugefügt werden." << std::endl;
 	std::cout << "Mit wenig zusaetzlichem Code kann es auf Enigma-G mit X Walzen und drehbarer UKW veraendert werden." << std::endl;

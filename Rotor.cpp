@@ -1,11 +1,14 @@
 #include "Rotor.h"
+#include <iostream> // REMOVE
 Rotor::Rotor() {
 
 }
 void Rotor::incrementRotor(int k) {
-	for (int i = 0; i < 26; i++) {
-		rotor[i] = rotor[(i + k) % 26];
+	int stored = rotor[0];
+	for (int i = 0; i <= 24; i++) {
+		rotor[i] = rotor[i + 1];
 	}
+	rotor[25] = stored;
 }
 Rotor::Rotor(const Rotor& r) {
 	for (int i = 0; i < 26; i++) {
@@ -22,6 +25,13 @@ int* Rotor::string_to_rotor(std::string s) {
 	for (int i = 0; i < s.length(); i++) {
 		rotor[i] = s[i] - 65; //Converts A -> 0, B->1, ... in ASCII
 	}
+
+	for (int j = 0; j < 26; j++) {
+		std::cout << rotor[j] << " ";
+	}
+	std::cout << std::endl;
+
+
 	return rotor;
 }
 int Rotor::getEncryption(int plain) {
